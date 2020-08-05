@@ -953,3 +953,4 @@ console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
 
 MrBuzzYT.login(config.token).catch(err=> console.log("\n\n\n Incorrect Token was provided \n\n\n Need to go back to the Discord Devloper Portal and copy and paste the correct token into the Config.json file \n\n\n\n\n\n\n"));
 bot.login(process.env.BOT_TOKEN);
+MrBuzzYT.login(process.env.BOT_TOKEN);
