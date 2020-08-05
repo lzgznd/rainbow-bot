@@ -1,4 +1,34 @@
 const discord = require('discord.js');
+
+const Discord = require('discord.js');
+
+const bot = new Discord.Client
+
+const prefix = '--';
+
+bot.on('ready', () => {
+    bot.user.setStatus('dnd')
+    bot.user.setPresence({
+        game: {
+            name: '.',
+            type: "dnd",
+            url: ""
+        }
+    });
+});
+
+MrBuzzYT.on('ready', () => {
+    MrBuzzYT.user.setStatus('dnd')
+    MrBuzzYT.user.setPresence({
+        game: {
+            name: '.',
+            type: "dnd",
+            url: ""
+        }
+    });
+});
+
+
 // ___  ___  ___ ______ _____        ________   __      ______                     _                       ______             _  _    _____  ___________   ___ 
 // |  \/  | / _ \|  _  \  ___|       | ___ \ \ / /      | ___ \                   | |                      |  _  \          _| || |_ |  _  ||___  /  _  | /   |
 // | .  . |/ /_\ \ | | | |__         | |_/ /\ V /       | |_/ /_ __ __ _ _ __   __| | ___  _ __    ______  | | | |_____   _|_  __  _|| |_| |   / / \ V / / /| |
