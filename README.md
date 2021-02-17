@@ -1,1 +1,1 @@
-# rainbow-bot
+# Discord Rainbow Bot
